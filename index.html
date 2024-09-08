@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons8-resume-48.png" type="image/x-icon">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resumeForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <div class="form-group">
+                    <label for="education">Education:</label>
+                    <textarea id="education" name="education" rows="4" required></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Work Experience</legend>
+                <div class="form-group">
+                    <label for="workExperience">Work Experience:</label>
+                    <textarea id="workExperience" name="workExperience" rows="4" required></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Skills</legend>
+                <div class="form-group">
+                    <label for="skills">Skills:</label>
+                    <textarea id="skills" name="skills" rows="4" required></textarea>
+                </div>
+            </fieldset>
+            <button type="submit">Generate Resume</button>
+        </form>
+        <div id="resumeOutput">
+            <div id="resumeContent">
+                <!-- Resume content will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
